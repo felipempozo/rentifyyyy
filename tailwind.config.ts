@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				rentify: {
+					green: '#4EB87A',
+					dark: '#1e3243',
+					lightGreen: '#6FCFA0',
+					gray: '#8E9196',
+					lightGray: '#F1F1F1'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
