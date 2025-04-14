@@ -38,9 +38,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="h-12 w-12 bg-rentify-green text-white rounded-full flex items-center justify-center font-heading font-bold text-3xl">
-            R
-          </div>
+          <img 
+            src="/lovable-uploads/4f266250-ec68-426c-908b-638b04eab302.png" 
+            alt="Rentify Logo" 
+            className="h-12 w-auto"
+          />
         </div>
 
         {/* Desktop Navigation */}

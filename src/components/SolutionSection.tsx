@@ -16,9 +16,9 @@ const SolutionSection = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-rentify-green rounded-full opacity-20"></div>
               <img 
-                src="/lovable-uploads/b433b9ff-c203-4538-aef1-70098cb2d4b3.png" 
+                src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
                 alt="Problema de alquiler" 
-                className="relative z-10 rounded-lg shadow-lg w-full"
+                className="relative z-10 rounded-lg shadow-lg w-full h-[350px] object-cover"
               />
             </div>
           </div>
