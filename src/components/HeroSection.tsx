@@ -7,17 +7,17 @@ const HeroSection = () => {
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-rentify-dark z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-rentify-dark/90 to-rentify-dark/70 z-10"></div>
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/46443fcd-c075-4c51-abac-6c9a76880215.png')] bg-cover bg-center opacity-40 z-0"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80')] bg-cover bg-center opacity-40 z-0"></div>
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 z-20 pt-24">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-slide-right">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 font-heading">
               El futuro del <span className="text-gradient">alquiler</span> está aquí
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8">
+            <p className="text-lg md:text-xl text-white/90 mb-8 font-sans">
               Rentify conecta a propietarios y personas que buscan alquilar. Rápido, seguro y sin complicaciones.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -27,7 +27,7 @@ const HeroSection = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg text-center transition-all hover:shadow-lg hover:-translate-y-0.5"
+                className="bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg text-center transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans"
               >
                 Únete Ahora
               </Link>
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-full px-8 py-3 font-medium text-lg text-center backdrop-blur-sm transition-all"
+                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-full px-8 py-3 font-medium text-lg text-center backdrop-blur-sm transition-all font-sans"
               >
                 Conoce Más
               </Link>
@@ -46,7 +46,7 @@ const HeroSection = () => {
           
           <div className="hidden md:block animate-fade-in">
             <img 
-              src="/lovable-uploads/4f266250-ec68-426c-908b-638b04eab302.png" 
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
               alt="Rentify App" 
               className="max-w-full rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500"
             />

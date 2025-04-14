@@ -40,6 +40,16 @@ const HowItWorksSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
       )
+    },
+    {
+      number: '05',
+      title: 'Devuelve el Artículo',
+      description: 'Al finalizar el periodo de alquiler, devuelve el artículo en las mismas condiciones en que lo recibiste.',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-rentify-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" />
+        </svg>
+      )
     }
   ];
 
@@ -47,22 +57,22 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="py-20 bg-rentify-dark text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Cómo <span className="text-rentify-green">Funciona</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">Cómo <span className="text-rentify-green">Funciona</span></h2>
           <div className="w-20 h-1 bg-rentify-green mx-auto mb-6"></div>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto font-sans">
             Rentify hace que el proceso de alquiler sea fácil, seguro y conveniente tanto para propietarios como para usuarios.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all group">
               <div className="flex justify-between items-start mb-6">
                 <div className="p-3 bg-rentify-green/10 rounded-lg">{step.icon}</div>
-                <span className="text-4xl font-bold text-white/20 group-hover:text-rentify-green/30 transition-colors">{step.number}</span>
+                <span className="text-4xl font-bold text-white/20 group-hover:text-rentify-green/30 transition-colors font-heading">{step.number}</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-rentify-green transition-colors">{step.title}</h3>
-              <p className="text-white/70">{step.description}</p>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-rentify-green transition-colors font-heading">{step.title}</h3>
+              <p className="text-white/70 font-sans">{step.description}</p>
               
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2">
@@ -76,10 +86,10 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-lg mb-6 text-white/80">
+          <p className="text-lg mb-6 text-white/80 font-sans">
             Únete a la revolución del alquiler y forma parte de nuestra comunidad.
           </p>
-          <a href="#contact" className="inline-block bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5">
+          <a href="#contact" className="inline-block bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
             Quiero participar
           </a>
         </div>

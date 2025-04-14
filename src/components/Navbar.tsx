@@ -38,11 +38,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/9f92b1cc-ebc3-4bcd-8da8-3207e8f9b306.png" 
-            alt="Rentify Logo" 
-            className="h-10 md:h-12"
-          />
+          <div className="h-12 w-12 bg-rentify-green text-white rounded-full flex items-center justify-center font-heading font-bold text-3xl">
+            R
+          </div>
         </div>
 
         {/* Desktop Navigation */}
@@ -56,7 +54,7 @@ const Navbar = () => {
               offset={-100}
               duration={500}
               className={cn(
-                "cursor-pointer font-medium transition-colors hover:text-rentify-green relative group",
+                "cursor-pointer font-medium transition-colors hover:text-rentify-green relative group font-sans",
                 scrolled ? "text-rentify-dark" : "text-white"
               )}
             >
@@ -73,7 +71,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="hidden md:flex bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-6 py-2 font-medium transition-all hover:shadow-lg hover:-translate-y-0.5"
+          className="hidden md:flex bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-6 py-2 font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans"
         >
           Únete
         </Link>
@@ -127,7 +125,7 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="text-rentify-dark hover:text-rentify-green font-medium py-2"
+              className="text-rentify-dark hover:text-rentify-green font-medium py-2 font-sans"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
@@ -139,7 +137,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="bg-rentify-green text-white rounded-full px-6 py-2 font-medium text-center"
+            className="bg-rentify-green text-white rounded-full px-6 py-2 font-medium text-center font-sans"
             onClick={() => setMobileMenuOpen(false)}
           >
             Únete
