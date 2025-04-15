@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -58,8 +57,8 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				rentify: {
-					green: '#4EB87A',
-					dark: '#1e3243',
+					green: '#52b26e',
+					dark: '#2b3e50',
 					lightGreen: '#6FCFA0',
 					gray: '#8E9196',
 					lightGray: '#F1F1F1'
