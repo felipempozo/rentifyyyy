@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-white/90 shadow-md backdrop-blur-sm py-2" : "bg-transparent py-5"
+        scrolled ? "bg-rentify-dark/95 shadow-md backdrop-blur-sm py-2" : "bg-transparent py-5"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <Link
               key={link.name}
               to={link.to}
@@ -57,7 +57,8 @@ const Navbar = () => {
               duration={500}
               className={cn(
                 "cursor-pointer font-medium transition-colors hover:text-rentify-green relative group font-sans",
-                scrolled ? "text-rentify-dark" : "text-white"
+                scrolled ? "text-white" : "text-white",
+                index === 0 ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : ""
               )}
             >
               {link.name}
@@ -73,7 +74,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="hidden md:flex bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-6 py-2 font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans"
+          className="hidden md:flex bg-rentify-yellowDark hover:bg-rentify-yellowDark/90 text-rentify-dark rounded-full px-6 py-2 font-medium transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans"
         >
           Únete
         </Link>
@@ -85,9 +86,7 @@ const Navbar = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={cn("h-6 w-6 transition-colors", 
-              scrolled ? "text-rentify-dark" : "text-white"
-            )}
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -114,12 +113,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          "absolute top-full left-0 w-full bg-white shadow-lg md:hidden transition-all duration-300 overflow-hidden",
+          "absolute top-full left-0 w-full bg-rentify-dark/95 shadow-lg md:hidden transition-all duration-300 overflow-hidden",
           mobileMenuOpen ? "max-h-96" : "max-h-0"
         )}
       >
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <Link
               key={link.name}
               to={link.to}
@@ -127,7 +126,10 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="text-rentify-dark hover:text-rentify-green font-medium py-2 font-sans"
+              className={cn(
+                "font-medium py-2 font-sans",
+                index === 0 ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : "text-white hover:text-rentify-green"
+              )}
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
@@ -139,7 +141,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="bg-rentify-green text-white rounded-full px-6 py-2 font-medium text-center font-sans"
+            className="bg-rentify-yellowDark text-rentify-dark rounded-full px-6 py-2 font-medium text-center font-sans"
             onClick={() => setMobileMenuOpen(false)}
           >
             Únete

@@ -68,7 +68,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">Cómo <span className="text-rentify-green">Funciona</span></h2>
-          <div className="w-20 h-1 bg-rentify-green mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-rentify-yellowDark mx-auto mb-6"></div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto font-sans">
             Rentify hace que el proceso de alquiler sea fácil, seguro y conveniente tanto para propietarios como para usuarios.
           </p>
@@ -76,17 +76,17 @@ const HowItWorksSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all group">
+            <div key={index} className={`${index % 3 === 1 ? 'bg-rentify-yellow/10' : 'bg-white/5'} rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all group`}>
               <div className="flex justify-between items-start mb-6">
-                <div className="p-3 bg-rentify-green/10 rounded-lg">{step.icon}</div>
-                <span className="text-4xl font-bold text-white/20 group-hover:text-rentify-green/30 transition-colors font-heading">{step.number}</span>
+                <div className={`p-3 ${index % 3 === 1 ? 'bg-rentify-yellowDark/20' : 'bg-rentify-green/10'} rounded-lg`}>{step.icon}</div>
+                <span className={`text-4xl font-bold ${index % 3 === 1 ? 'text-rentify-yellowDark/30' : 'text-white/20'} group-hover:text-rentify-green/30 transition-colors font-heading`}>{step.number}</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 group-hover:text-rentify-green transition-colors font-heading">{step.title}</h3>
               <p className="text-white/70 font-sans">{step.description}</p>
               
               {index < steps.length - 1 && (
                 <div className="hidden xl:block absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rentify-green/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rentify-yellowDark/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
@@ -99,9 +99,14 @@ const HowItWorksSection = () => {
           <p className="text-lg mb-6 text-white/80 font-sans">
             Únete a la revolución del alquiler y forma parte de nuestra comunidad.
           </p>
-          <a href="#contact" className="inline-block bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
-            Quiero participar
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" className="inline-block bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
+              Quiero participar
+            </a>
+            <a href="#about" className="inline-block bg-rentify-yellowDark hover:bg-rentify-yellowDark/90 text-rentify-dark rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
+              Más información
+            </a>
+          </div>
         </div>
       </div>
     </section>

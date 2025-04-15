@@ -1,40 +1,41 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 52 0% 98%;  /* Light, soft background instead of pure white */
+    --background: 210 30% 95%;  /* Lighter version of our blue instead of white */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 52 0% 97%;  /* Soft, warm background for cards */
+    --card: 210 30% 97%;  /* Soft, cool background for cards */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 52 0% 97%;
+    --popover: 210 30% 97%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 145 42% 41%;  /* Keep existing green */
+    --primary: 145 42% 41%;  /* Our green */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 30% 20%;  /* Keep existing dark blue */
+    --secondary: 210 30% 20%;  /* Our dark blue */
     --secondary-foreground: 210 40% 98%;
 
-    --tertiary: 48 100% 83%;  /* HSL for our yellow color */
+    --tertiary: 48 100% 62%;  /* Yellow as tertiary color */
     --tertiary-foreground: 30 50% 20%;
 
-    --muted: 52 20% 94%;  /* Soft, warm muted color */
+    --muted: 210 30% 90%;  /* Soft, cool muted color */
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 48 100% 83%;  /* Use yellow as accent */
+    --accent: 48 100% 62%;  /* Use yellow as accent */
     --accent-foreground: 30 50% 20%;
 
-    --border: 48 50% 85%;  /* Soft yellow border */
-    --input: 48 50% 85%;
-    --ring: 48 100% 70%;  /* Brighter yellow ring */
+    --border: 210 30% 85%;  /* Softer border */
+    --input: 210 30% 85%;
+    --ring: 48 100% 60%;  /* Yellow ring */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 210 30% 95%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -88,10 +89,6 @@
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-rentify-green to-rentify-yellow bg-clip-text text-transparent;
-  }
-  
   .animate-fade-in {
     animation: fadeIn 0.8s ease-in-out forwards;
   }

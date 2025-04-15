@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-slide-right">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 font-heading">
-              El futuro del <span className="text-gradient">alquiler</span> está aquí
+              El futuro del <span className="text-rentify-green">alquiler</span> está aquí
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 font-sans">
               Rentify conecta a propietarios y personas que buscan alquilar. Rápido, seguro y sin complicaciones.
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-full px-8 py-3 font-medium text-lg text-center backdrop-blur-sm transition-all font-sans"
+                className="bg-rentify-yellowDark text-rentify-dark border border-rentify-yellowDark hover:bg-rentify-yellowDark/80 rounded-full px-8 py-3 font-medium text-lg text-center transition-all font-sans"
               >
                 Conoce Más
               </Link>
@@ -45,11 +45,14 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden md:block animate-fade-in">
-            <img 
-              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-              alt="Rentify App" 
-              className="max-w-full rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500"
-            />
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-rentify-yellowDark rounded-full opacity-20"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                alt="Rentify App" 
+                className="max-w-full rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500"
+              />
+            </div>
           </div>
         </div>
         
@@ -57,7 +60,7 @@ const HeroSection = () => {
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:flex">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            className="h-10 w-10 text-white/70"
+            className="h-10 w-10 text-rentify-yellowDark"
             fill="none" 
             viewBox="0 0 24 24" 
             stroke="currentColor"
