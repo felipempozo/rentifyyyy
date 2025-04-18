@@ -1,4 +1,3 @@
-
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -11,15 +10,15 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1 relative overflow-hidden group rounded-2xl shadow-xl">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+          <div className="order-2 md:order-1 relative overflow-hidden group rounded-2xl shadow-xl h-[600px]">
             <div className="absolute inset-0 bg-gradient-to-br from-rentify-dark to-rentify-green opacity-90 z-10"></div>
             <img 
               src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Rentify para empresas" 
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
-            <div className="relative z-20 p-8 text-white">
+            <div className="relative z-20 p-8 h-full flex flex-col">
               <h3 className="text-2xl font-bold mb-6 font-heading">Para Empresas</h3>
               <ul className="space-y-4">
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
@@ -60,14 +59,14 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="order-1 md:order-2 relative overflow-hidden group rounded-2xl shadow-xl">
+          <div className="order-1 md:order-2 relative overflow-hidden group rounded-2xl shadow-xl h-[600px]">
             <div className="absolute inset-0 bg-gradient-to-br from-rentify-green to-rentify-lightGreen opacity-90 z-10"></div>
             <img 
               src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Rentify para personas" 
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
-            <div className="relative z-20 p-8 text-white">
+            <div className="relative z-20 p-8 h-full flex flex-col">
               <h3 className="text-2xl font-bold mb-6 font-heading">Para Personas</h3>
               <ul className="space-y-4">
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
