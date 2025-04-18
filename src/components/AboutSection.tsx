@@ -1,110 +1,76 @@
 
+import { Check } from "lucide-react";
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rentify-dark">¿Qué es <span className="text-gradient">Rentify</span>?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rentify-dark">¿Qué es <span className="text-rentify-green">Rentify</span>?</h2>
           <div className="w-20 h-1 bg-rentify-green mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Un portal digital de alquiler que conecta empresas y personas, transformando la forma en que alquilamos bienes.
+            La plataforma digital que revoluciona el alquiler conectando empresas y personas de manera eficiente y segura.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
-          <div className="order-2 md:order-1 relative overflow-hidden group rounded-2xl shadow-xl h-[600px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-rentify-dark to-rentify-green opacity-90 z-10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-              alt="Rentify para empresas" 
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="relative z-20 p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-6 text-white font-heading">Para Empresas</h3>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Para Empresas */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-rentify-dark p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Para Empresas</h3>
+              <p className="text-white/80">Optimiza y expande tu negocio de alquiler</p>
+            </div>
+            <div className="p-8">
               <ul className="space-y-4">
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-green" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Amplía tu alcance de mercado y visibilidad</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-green" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Gestión eficiente de inventario y reservas</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-green" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Sistema de pagos seguro y automatizado</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-green" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Análisis y reportes detallados de rendimiento</p>
-                </li>
+                <BenefitItem>
+                  Gestión integral de inventario y reservas en tiempo real
+                </BenefitItem>
+                <BenefitItem>
+                  Expansión de alcance de mercado y visibilidad online
+                </BenefitItem>
+                <BenefitItem>
+                  Sistema automatizado de pagos y facturación
+                </BenefitItem>
+                <BenefitItem>
+                  Análisis detallado de rendimiento y métricas
+                </BenefitItem>
+                <BenefitItem>
+                  Atención al cliente y soporte técnico 24/7
+                </BenefitItem>
+                <BenefitItem>
+                  Herramientas de marketing y promoción integradas
+                </BenefitItem>
               </ul>
-              <div className="absolute bottom-4 right-4 w-16 h-16 bg-white/10 rounded-full"></div>
-              <div className="absolute top-4 left-4 w-20 h-20 bg-white/10 rounded-full"></div>
             </div>
           </div>
 
-          <div className="order-1 md:order-2 relative overflow-hidden group rounded-2xl shadow-xl h-[600px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-rentify-green to-rentify-lightGreen opacity-90 z-10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-              alt="Rentify para personas" 
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="relative z-20 p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-6 text-white font-heading">Para Personas</h3>
+          {/* Para Personas */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-rentify-green p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
+              <p className="text-white/80">Alquila de forma fácil y segura</p>
+            </div>
+            <div className="p-8">
               <ul className="space-y-4">
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-dark" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Acceso a una amplia variedad de productos</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-dark" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Proceso de alquiler simple y rápido</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-dark" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Ahorro significativo vs. compra</p>
-                </li>
-                <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
-                  <div className="bg-white rounded-full p-1 mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-rentify-dark" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/90 font-sans">Garantía y soporte en cada alquiler</p>
-                </li>
+                <BenefitItem>
+                  Amplio catálogo de productos disponibles para alquiler
+                </BenefitItem>
+                <BenefitItem>
+                  Proceso de reserva simple y rápido
+                </BenefitItem>
+                <BenefitItem>
+                  Pagos seguros y transparentes
+                </BenefitItem>
+                <BenefitItem>
+                  Ahorro significativo frente a la compra
+                </BenefitItem>
+                <BenefitItem>
+                  Garantía en todos los alquileres
+                </BenefitItem>
+                <BenefitItem>
+                  Soporte personalizado durante todo el proceso
+                </BenefitItem>
               </ul>
-              <div className="absolute bottom-4 right-4 w-16 h-16 bg-white/10 rounded-full"></div>
-              <div className="absolute top-4 left-4 w-20 h-20 bg-white/10 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -113,4 +79,14 @@ const AboutSection = () => {
   );
 };
 
+const BenefitItem = ({ children }: { children: React.ReactNode }) => (
+  <li className="flex items-start space-x-3">
+    <div className="flex-shrink-0 w-5 h-5 mt-1">
+      <Check className="w-5 h-5 text-rentify-green" />
+    </div>
+    <span className="text-gray-600">{children}</span>
+  </li>
+);
+
 export default AboutSection;
+
