@@ -20,7 +20,7 @@ const AboutSection = () => {
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
             <div className="relative z-20 p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-6 font-heading">Para Empresas</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white font-heading">Para Empresas</h3>
               <ul className="space-y-4">
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -28,7 +28,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Publica tus bienes y productos para alquilar</p>
+                  <p className="text-white/90 font-sans">Amplía tu alcance de mercado y visibilidad</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -36,7 +36,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Digitaliza todo tu proceso de alquiler</p>
+                  <p className="text-white/90 font-sans">Gestión eficiente de inventario y reservas</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -44,7 +44,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Gestiona reservas y pagos de forma segura</p>
+                  <p className="text-white/90 font-sans">Sistema de pagos seguro y automatizado</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -52,7 +52,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Construye tu reputación digital como arrendador</p>
+                  <p className="text-white/90 font-sans">Análisis y reportes detallados de rendimiento</p>
                 </li>
               </ul>
               <div className="absolute bottom-4 right-4 w-16 h-16 bg-white/10 rounded-full"></div>
@@ -68,7 +68,7 @@ const AboutSection = () => {
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
             <div className="relative z-20 p-8 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-6 font-heading">Para Personas</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white font-heading">Para Personas</h3>
               <ul className="space-y-4">
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -76,7 +76,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Encuentra productos para alquilar sin salir de casa</p>
+                  <p className="text-white/90 font-sans">Acceso a una amplia variedad de productos</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -84,7 +84,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Accede a bienes que no necesitas comprar para uso puntual</p>
+                  <p className="text-white/90 font-sans">Proceso de alquiler simple y rápido</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -92,7 +92,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Realiza tus alquileres de forma rápida y segura</p>
+                  <p className="text-white/90 font-sans">Ahorro significativo vs. compra</p>
                 </li>
                 <li className="flex items-start transform hover:translate-x-2 transition-transform duration-300">
                   <div className="bg-white rounded-full p-1 mr-3 mt-1">
@@ -100,7 +100,7 @@ const AboutSection = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-white/90 font-sans">Ahorra dinero eligiendo alquilar en vez de comprar</p>
+                  <p className="text-white/90 font-sans">Garantía y soporte en cada alquiler</p>
                 </li>
               </ul>
               <div className="absolute bottom-4 right-4 w-16 h-16 bg-white/10 rounded-full"></div>
