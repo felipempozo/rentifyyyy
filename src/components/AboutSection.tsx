@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rentify-dark">¿Qué es <span className="text-rentify-green">Rentify</span>?</h2>
@@ -15,12 +15,12 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Para Empresas */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="bg-rentify-dark p-6">
+          <div className="bg-gradient-to-br from-white to-rentify-lightGray rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-r from-rentify-dark to-rentify-dark/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Empresas</h3>
               <p className="text-white/80">Optimiza y expande tu negocio de alquiler</p>
             </div>
-            <div className="p-8">
+            <div className="p-8 bg-white/80 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
                   Gestión integral de inventario y reservas en tiempo real
@@ -45,12 +45,12 @@ const AboutSection = () => {
           </div>
 
           {/* Para Personas */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="bg-rentify-green p-6">
+          <div className="bg-gradient-to-br from-white to-rentify-yellow rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-r from-rentify-green to-rentify-green/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
               <p className="text-white/80">Alquila de forma fácil y segura</p>
             </div>
-            <div className="p-8">
+            <div className="p-8 bg-white/80 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
                   Amplio catálogo de productos disponibles para alquiler
@@ -89,4 +89,3 @@ const BenefitItem = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default AboutSection;
-
