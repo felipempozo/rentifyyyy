@@ -15,60 +15,66 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Para Empresas */}
-          <div className="bg-gradient-to-br from-white to-rentify-lightGray rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          <div 
+            className="bg-gradient-to-br from-white/90 to-rentify-lightGray/90 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
+            style={{
+              backgroundImage: "url('/placeholder.svg')",
+              backgroundSize: '400px',
+              backgroundPosition: 'right -100px center',
+              backgroundRepeat: 'no-repeat',
+              backgroundBlendMode: 'soft-light'
+            }}
+          >
             <div className="bg-gradient-to-r from-rentify-dark to-rentify-dark/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Empresas</h3>
-              <p className="text-white/80">Optimiza y expande tu negocio de alquiler</p>
+              <p className="text-white/80">Rentify facilita la gestión y expansión de tu negocio</p>
             </div>
-            <div className="p-8 bg-white/80 backdrop-blur-sm">
+            <div className="p-8 bg-white/90 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
-                  Gestión integral de inventario y reservas en tiempo real
+                  Sistema de gestión integral para tu negocio de alquiler
                 </BenefitItem>
                 <BenefitItem>
-                  Expansión de alcance de mercado y visibilidad online
+                  Mayor visibilidad y alcance para tus productos
                 </BenefitItem>
                 <BenefitItem>
-                  Sistema automatizado de pagos y facturación
+                  Procesos automatizados y eficientes
                 </BenefitItem>
                 <BenefitItem>
-                  Análisis detallado de rendimiento y métricas
-                </BenefitItem>
-                <BenefitItem>
-                  Atención al cliente y soporte técnico 24/7
-                </BenefitItem>
-                <BenefitItem>
-                  Herramientas de marketing y promoción integradas
+                  Análisis y métricas de rendimiento
                 </BenefitItem>
               </ul>
             </div>
           </div>
 
           {/* Para Personas */}
-          <div className="bg-gradient-to-br from-white to-rentify-yellow rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          <div 
+            className="bg-gradient-to-br from-white/90 to-rentify-yellow/80 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
+            style={{
+              backgroundImage: "url('/placeholder.svg')",
+              backgroundSize: '300px',
+              backgroundPosition: 'left -50px center',
+              backgroundRepeat: 'no-repeat',
+              backgroundBlendMode: 'overlay'
+            }}
+          >
             <div className="bg-gradient-to-r from-rentify-green to-rentify-green/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
-              <p className="text-white/80">Alquila de forma fácil y segura</p>
+              <p className="text-white/80">Encuentra todo lo que necesitas en un solo lugar</p>
             </div>
-            <div className="p-8 bg-white/80 backdrop-blur-sm">
+            <div className="p-8 bg-white/90 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
-                  Amplio catálogo de productos disponibles para alquiler
+                  Accede a una amplia variedad de productos
                 </BenefitItem>
                 <BenefitItem>
-                  Proceso de reserva simple y rápido
+                  Ahorra dinero alquilando en lugar de comprar
                 </BenefitItem>
                 <BenefitItem>
-                  Pagos seguros y transparentes
+                  Proceso simple y seguro
                 </BenefitItem>
                 <BenefitItem>
-                  Ahorro significativo frente a la compra
-                </BenefitItem>
-                <BenefitItem>
-                  Garantía en todos los alquileres
-                </BenefitItem>
-                <BenefitItem>
-                  Soporte personalizado durante todo el proceso
+                  Soporte y atención personalizada
                 </BenefitItem>
               </ul>
             </div>
