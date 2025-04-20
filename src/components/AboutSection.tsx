@@ -16,14 +16,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Para Empresas */}
           <div 
-            className="bg-gradient-to-br from-white/90 to-rentify-lightGray/90 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
-            style={{
-              backgroundImage: "url('/placeholder.svg')",
-              backgroundSize: '400px',
-              backgroundPosition: 'right -100px center',
-              backgroundRepeat: 'no-repeat',
-              backgroundBlendMode: 'soft-light'
-            }}
+            className="bg-gradient-to-br from-[#E5DEFF] to-[#D3E4FD] rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
           >
             <div className="bg-gradient-to-r from-rentify-dark to-rentify-dark/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Empresas</h3>
@@ -49,14 +42,7 @@ const AboutSection = () => {
 
           {/* Para Personas */}
           <div 
-            className="bg-gradient-to-br from-white/90 to-rentify-yellow/80 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
-            style={{
-              backgroundImage: "url('/placeholder.svg')",
-              backgroundSize: '300px',
-              backgroundPosition: 'left -50px center',
-              backgroundRepeat: 'no-repeat',
-              backgroundBlendMode: 'overlay'
-            }}
+            className="bg-gradient-to-br from-[#FEF7CD] to-[#FEC6A1] rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
           >
             <div className="bg-gradient-to-r from-rentify-green to-rentify-green/90 p-6">
               <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
