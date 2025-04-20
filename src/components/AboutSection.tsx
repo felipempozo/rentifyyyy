@@ -16,13 +16,17 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Para Empresas */}
           <div 
-            className="bg-gradient-to-br from-[#9b87f5] to-[#6E59A5] rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
+            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
+            style={{
+              background: 'linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)',
+              backgroundSize: 'cover'
+            }}
           >
-            <div className="bg-gradient-to-r from-rentify-dark/90 to-rentify-dark/70 p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-rentify-dark/90 to-rentify-dark/80 p-6 backdrop-blur-sm">
               <h3 className="text-2xl font-bold text-white mb-2">Para Empresas</h3>
               <p className="text-white/90">Rentify facilita la gestión y expansión de tu negocio</p>
             </div>
-            <div className="p-8 bg-white/40 backdrop-blur-sm">
+            <div className="p-8 bg-white/30 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
                   Sistema de gestión integral para tu negocio de alquiler
@@ -42,13 +46,17 @@ const AboutSection = () => {
 
           {/* Para Personas */}
           <div 
-            className="bg-gradient-to-br from-[#F97316] to-[#FEC6A1] rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
+            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
+            style={{
+              background: 'linear-gradient(225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)',
+              backgroundSize: 'cover'
+            }}
           >
-            <div className="bg-gradient-to-r from-rentify-green/90 to-rentify-green/70 p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-rentify-green/90 to-rentify-green/80 p-6 backdrop-blur-sm">
               <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
               <p className="text-white/90">Encuentra todo lo que necesitas en un solo lugar</p>
             </div>
-            <div className="p-8 bg-white/40 backdrop-blur-sm">
+            <div className="p-8 bg-white/30 backdrop-blur-sm">
               <ul className="space-y-4">
                 <BenefitItem>
                   Accede a una amplia variedad de productos
@@ -76,7 +84,7 @@ const BenefitItem = ({ children }: { children: React.ReactNode }) => (
     <div className="flex-shrink-0 w-5 h-5 mt-1">
       <Check className="w-5 h-5 text-rentify-green" />
     </div>
-    <span className="text-gray-700 font-medium">{children}</span>
+    <span className="text-gray-800 font-medium">{children}</span>
   </li>
 );
 
