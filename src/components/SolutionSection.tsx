@@ -1,4 +1,6 @@
 
+import { AlertTriangle } from "lucide-react";
+
 const SolutionSection = () => {
   return (
     <section id="solution" className="py-20 bg-rentify-dark/5">
@@ -25,13 +27,23 @@ const SolutionSection = () => {
           
           <div>
             <h3 className="text-2xl font-bold mb-4 text-rentify-dark">El Problema</h3>
-            <div className="bg-rentify-dark/10 p-6 rounded-lg shadow-sm mb-8 border-l-4 border-rentify-dark">
-              <p className="text-rentify-dark/80 mb-4">
-                Los altos costos de transacción, falta de confianza, seguridad, y herramientas adecuadas hacen que muchas transacciones no se concreten.
-              </p>
-              <p className="text-rentify-dark/80">
-                Esto resulta en compras innecesarias y acumulación de objetos sin uso, cuando podrían ser compartidos a través del alquiler.
-              </p>
+            <div
+              className="relative p-6 rounded-xl border-2 border-rentify-green shadow-lg mb-8 flex items-start gap-4 animate-fade-in"
+              style={{
+                background: "linear-gradient(108deg, #FEF7CD 20%, #F7CE46 100%)" // degrade amarillo marca
+              }}
+            >
+              <div className="flex-shrink-0 mt-1">
+                <AlertTriangle className="w-8 h-8 text-rentify-green" />
+              </div>
+              <div>
+                <p className="text-rentify-dark/90 text-lg font-semibold mb-2">
+                  Los altos costos de transacción, falta de confianza, seguridad, y herramientas adecuadas hacen que muchas transacciones no se concreten.
+                </p>
+                <p className="text-rentify-dark/80">
+                  Esto resulta en compras innecesarias y acumulación de objetos sin uso, cuando podrían ser compartidos a través del alquiler.
+                </p>
+              </div>
             </div>
             
             <h3 className="text-2xl font-bold mb-4 text-rentify-dark">Nuestra Solución</h3>
