@@ -6,7 +6,9 @@ const SolutionSection = () => {
     <section id="solution" className="py-20 bg-rentify-dark/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rentify-dark">El <span className="text-rentify-green">Problema</span> y Nuestra <span className="text-rentify-green">Solución</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-rentify-dark">
+            El <span className="text-rentify-green">Problema</span> y Nuestra <span className="text-rentify-green">Solución</span>
+          </h2>
           <div className="w-20 h-1 bg-rentify-yellowDark mx-auto mb-6"></div>
           <p className="text-lg text-rentify-dark/80 max-w-3xl mx-auto">
             Alquilar debería ser simple y confiable. En Rentify, eliminamos los obstáculos tradicionales.
@@ -28,10 +30,7 @@ const SolutionSection = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-rentify-dark">El Problema</h3>
             <div
-              className="relative p-6 rounded-xl border-2 border-rentify-green shadow-lg mb-8 flex items-start gap-4 animate-fade-in"
-              style={{
-                background: "linear-gradient(108deg, #FEF7CD 20%, #F7CE46 100%)" // degrade amarillo marca
-              }}
+              className="relative p-6 rounded-xl shadow-lg mb-8 border-l-4 border-rentify-green bg-white flex items-start gap-4 animate-fade-in"
             >
               <div className="flex-shrink-0 mt-1">
                 <AlertTriangle className="w-8 h-8 text-rentify-green" />
