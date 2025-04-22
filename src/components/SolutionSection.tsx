@@ -1,4 +1,3 @@
-
 import { AlertTriangle } from "lucide-react";
 
 const SolutionSection = () => {
@@ -46,7 +45,7 @@ const SolutionSection = () => {
             </div>
             
             <h3 className="text-2xl font-bold mb-4 text-rentify-dark">Nuestra Solución</h3>
-            <div className="bg-rentify-yellow/30 p-6 rounded-lg shadow-sm border-l-4 border-rentify-green">
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-rentify-green">
               <p className="text-rentify-dark/90 mb-4">
                 Rentify facilita el alquiler de artículos de forma segura y sencilla, eliminando barreras como la desconfianza y la falta de herramientas.
               </p>
