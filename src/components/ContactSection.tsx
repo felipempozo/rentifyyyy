@@ -77,7 +77,7 @@ const ContactSection = () => {
                     </svg>
                     <div>
                       <p className="text-sm text-white/60">Email</p>
-                      <p>info@rentify.com</p>
+                      <p>rentifyarg@gmail.com</p>
                     </div>
                   </div>
                   
@@ -88,7 +88,7 @@ const ContactSection = () => {
                     </svg>
                     <div>
                       <p className="text-sm text-white/60">Ubicación</p>
-                      <p>Argentina</p>
+                      <p>Rosario, Argentina</p>
                     </div>
                   </div>
                 </div>
