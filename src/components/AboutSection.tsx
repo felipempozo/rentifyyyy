@@ -20,7 +20,7 @@ const AboutSection = () => {
           >
             <div className="relative bg-rentify-yellowDark p-6 z-10">
               <h3 className="text-2xl font-bold text-rentify-dark mb-2">Para Empresas</h3>
-              <p className="text-rentify-dark/90">Rentify facilita la gestión y expansión de tu negocio</p>
+              <p className="text-rentify-dark/90">Rentify facilita la gestión de tu negocio</p>
             </div>
             <div className="relative p-8 bg-white z-10">
               <ul className="space-y-4">
