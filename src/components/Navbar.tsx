@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link, index) => (
+          {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.to}
@@ -55,14 +56,20 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onSetActive={() => setActiveSection(link.to)}
               className={cn(
                 "cursor-pointer font-medium transition-colors hover:text-rentify-green relative group font-sans",
                 scrolled ? "text-white" : "text-white",
-                index === 0 ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : ""
+                activeSection === link.to ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : ""
               )}
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rentify-green transition-all group-hover:w-full"></span>
+              <span className={cn(
+                "absolute -bottom-1 left-0 h-0.5 transition-all",
+                activeSection === link.to 
+                  ? "w-full bg-rentify-yellowDark" 
+                  : "w-0 bg-rentify-green group-hover:w-full"
+              )}></span>
             </Link>
           ))}
         </div>
@@ -118,7 +125,7 @@ const Navbar = () => {
         )}
       >
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
-          {navLinks.map((link, index) => (
+          {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.to}
@@ -126,9 +133,10 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onSetActive={() => setActiveSection(link.to)}
               className={cn(
                 "font-medium py-2 font-sans",
-                index === 0 ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : "text-white hover:text-rentify-green"
+                activeSection === link.to ? "text-rentify-yellowDark hover:text-rentify-yellowDark/80" : "text-white hover:text-rentify-green"
               )}
               onClick={() => setMobileMenuOpen(false)}
             >
