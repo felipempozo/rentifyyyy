@@ -16,13 +16,13 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Para Empresas */}
           <div 
-            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 bg-rentify-yellowDark"
+            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
           >
             <div className="relative bg-rentify-yellowDark p-6 z-10">
               <h3 className="text-2xl font-bold text-rentify-dark mb-2">Para Empresas</h3>
               <p className="text-rentify-dark/90">Rentify facilita la gestión y expansión de tu negocio</p>
             </div>
-            <div className="relative p-8 bg-rentify-yellowDark z-10">
+            <div className="relative p-8 bg-white z-10">
               <ul className="space-y-4">
                 <BenefitItem>
                   Sistema de gestión integral para tu negocio de alquiler
@@ -42,7 +42,7 @@ const AboutSection = () => {
 
           {/* Para Personas */}
           <div 
-            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 bg-white"
+            className="relative rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
           >
             <div className="relative bg-rentify-green p-6 z-10">
               <h3 className="text-2xl font-bold text-white mb-2">Para Personas</h3>
