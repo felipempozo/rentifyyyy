@@ -40,10 +40,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/f7b8bb00-0c91-4c42-bca1-4c820ba79339.png" 
+            src="/lovable-uploads/5082afac-a895-4ce0-a027-60123c48b8f8.png" 
             alt="Rentify Logo" 
             className="h-12 w-auto"
-            style={{ filter: 'drop-shadow(0px 0px 1px rgba(0,0,0,0.2))' }}
+            style={{ filter: 'drop-shadow(0px 0px 2px rgba(0,0,0,0.3))' }}
           />
         </div>
 
