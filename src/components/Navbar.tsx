@@ -43,6 +43,7 @@ const Navbar = () => {
             src="/lovable-uploads/f7b8bb00-0c91-4c42-bca1-4c820ba79339.png" 
             alt="Rentify Logo" 
             className="h-12 w-auto"
+            style={{ filter: 'drop-shadow(0px 0px 1px rgba(0,0,0,0.2))' }}
           />
         </div>
 
