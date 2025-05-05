@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/a466e920-365c-4dd3-80a4-90c62ba46f12.png" 
+            src="/lovable-uploads/4f266250-ec68-426c-908b-638b04eab302.png" 
             alt="Rentify Logo" 
             className="h-12 w-auto"
           />
