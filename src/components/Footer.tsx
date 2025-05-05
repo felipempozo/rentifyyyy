@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
             <img 
-              src="/lovable-uploads/9f92b1cc-ebc3-4bcd-8da8-3207e8f9b306.png" 
+              src="/lovable-uploads/a466e920-365c-4dd3-80a4-90c62ba46f12.png" 
               alt="Rentify Logo" 
               className="h-12 mb-5"
             />
