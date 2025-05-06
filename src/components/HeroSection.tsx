@@ -45,12 +45,12 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden md:block animate-fade-in">
-            <div className="relative">
+            <div className="relative flex justify-center items-center">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-rentify-yellowDark rounded-full opacity-20"></div>
               <img 
                 src="/lovable-uploads/0c0bec09-1f8c-4a01-bbaa-a003d800f7f1.png" 
                 alt="Aplicación Rentify en smartphone" 
-                className="max-w-full rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500"
+                className="w-4/5 md:w-3/4 lg:w-2/3 h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500 object-contain"
               />
             </div>
           </div>
