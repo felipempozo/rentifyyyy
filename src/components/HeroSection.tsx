@@ -48,8 +48,8 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-rentify-yellowDark rounded-full opacity-20"></div>
               <img 
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                alt="Rentify App" 
+                src="/lovable-uploads/0c0bec09-1f8c-4a01-bbaa-a003d800f7f1.png" 
+                alt="Aplicación Rentify en smartphone" 
                 className="max-w-full rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
             </div>
