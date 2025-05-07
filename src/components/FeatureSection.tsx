@@ -87,6 +87,21 @@ const FeatureSection = () => {
             </div>
           ))}
         </div>
+        
+        {/* Sección agregada con el título y botón */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-semibold mb-6 text-rentify-dark">
+            Únete a la revolución del alquiler y forma parte de nuestra comunidad
+          </h3>
+          <div className="flex justify-center">
+            <a 
+              href="#contact" 
+              className="bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg text-center transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans"
+            >
+              Quiero participar
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

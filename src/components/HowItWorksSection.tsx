@@ -94,20 +94,6 @@ const HowItWorksSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-lg mb-6 text-white/80 font-sans">
-            Únete a la revolución del alquiler y forma parte de nuestra comunidad.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="inline-block bg-rentify-green hover:bg-rentify-lightGreen text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
-              Quiero participar
-            </a>
-            <a href="#about" className="inline-block bg-white/10 hover:bg-white/20 text-white rounded-full px-8 py-3 font-medium text-lg transition-all hover:shadow-lg hover:-translate-y-0.5 font-sans">
-              Más información
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
