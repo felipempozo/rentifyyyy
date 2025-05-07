@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,14 +18,6 @@ const Footer = () => {
             </p>
             
         <div className="flex space-x-4">
-          <a 
-            href="https://www.facebook.com/rentifyarg" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-gray-400 hover:text-rentify-green transition-colors"
-          >
-            <Facebook className="h-6 w-6" />
-          </a>
           <a 
             href="https://www.instagram.com/rentifyarg" 
             target="_blank" 
@@ -58,17 +50,12 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               <li><a href="#" className="hover:text-rentify-green transition-colors">Sobre nosotros</a></li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Cómo funciona</a></li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Testimonios</a></li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Trabaja con nosotros</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Soporte</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Centro de ayuda</a></li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">FAQs</a></li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Políticas de privacidad</a></li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Términos de servicio</a></li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Contacto</a></li>
