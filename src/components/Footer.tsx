@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import PrivacyPolicyDialog from './PrivacyPolicyDialog';
 
 const Footer = () => {
   return (
@@ -56,7 +57,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Soporte</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Políticas de privacidad</a></li>
+              <li>
+                <PrivacyPolicyDialog>
+                  <button className="text-left text-gray-400 hover:text-rentify-green transition-colors">Políticas de privacidad</button>
+                </PrivacyPolicyDialog>
+              </li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Términos de servicio</a></li>
               <li><a href="#" className="hover:text-rentify-green transition-colors">Contacto</a></li>
             </ul>
