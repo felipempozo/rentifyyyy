@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram, Twitter, Linkedin } from 'lucide-react';
 import PrivacyPolicyDialog from './PrivacyPolicyDialog';
@@ -37,7 +36,7 @@ const Footer = () => {
             <Twitter className="h-6 w-6" />
           </a>
           <a 
-            href="https://www.linkedin.com/company/rentifyarg" 
+            href="https://www.linkedin.com/company/rentifyarg/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-400 hover:text-rentify-green transition-colors"
