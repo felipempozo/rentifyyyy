@@ -77,7 +77,7 @@ const FeatureSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all"
+              className="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all"
             >
               <div className="mb-5 inline-block p-3 bg-rentify-green/10 rounded-lg">
                 {feature.icon}
