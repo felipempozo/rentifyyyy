@@ -62,11 +62,11 @@ const SuccessStorySection = () => {
           </div>
 
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
               <img
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                src="/lovable-uploads/0f896a06-08db-4700-a5a1-baf4b8132f51.png"
                 alt="Pedro feliz en su fiesta con amigos bailando y equipo de música visible"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
@@ -78,8 +78,7 @@ const SuccessStorySection = () => {
                       <p className="text-sm text-rentify-gray">Alquilado por 1 noche</p>
                     </div>
                     <div className="ml-auto text-right">
-                      <p className="text-lg font-bold text-rentify-green">$15,000</p>
-                      <p className="text-xs text-rentify-gray">vs $80,000 comprarlo</p>
+                      <p className="text-lg font-bold text-rentify-green">$50,000</p>
                     </div>
                   </div>
                 </div>
