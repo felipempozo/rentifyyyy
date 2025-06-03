@@ -49,8 +49,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Rentify</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Sobre nosotros</a></li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Cómo funciona</a></li>
+              <li><a href="#about" className="hover:text-rentify-green transition-colors">Sobre nosotros</a></li>
+              <li><a href="#how-it-works" className="hover:text-rentify-green transition-colors">Cómo funciona</a></li>
             </ul>
           </div>
           
