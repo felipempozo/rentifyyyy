@@ -67,7 +67,7 @@ const Footer = () => {
                   <button className="text-left text-gray-400 hover:text-rentify-green transition-colors">Términos de servicio</button>
                 </TermsOfServiceDialog>
               </li>
-              <li><a href="#" className="hover:text-rentify-green transition-colors">Contacto</a></li>
+              <li><a href="#contact" className="hover:text-rentify-green transition-colors">Contacto</a></li>
             </ul>
           </div>
           
