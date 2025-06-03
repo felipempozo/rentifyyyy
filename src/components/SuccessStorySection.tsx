@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Music, Users, Heart } from 'lucide-react';
@@ -26,7 +25,7 @@ const SuccessStorySection = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-rentify-dark">Pedro, 28 años</h3>
-                    <p className="text-rentify-gray">Buenos Aires, Argentina</p>
+                    <p className="text-rentify-gray">Rosario, Argentina</p>
                   </div>
                 </div>
                 
@@ -97,8 +96,8 @@ const SuccessStorySection = () => {
 
         <div className="text-center mt-16">
           <p className="text-xl text-rentify-dark font-medium">
-            ¿Tienes un evento especial? 
-            <span className="text-rentify-green font-bold"> Rentify te ayuda a hacerlo realidad</span>
+            ¿Lo necesitas? 
+            <span className="text-rentify-green font-bold"> Lo alquilas por Rentify</span>
           </p>
         </div>
       </div>
