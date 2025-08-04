@@ -35,11 +35,11 @@ const SuccessStorySection = () => {
                     </p>
                     
                     <p className="text-lg leading-relaxed">
-                      <strong>La solución:</strong> Rentify se convirtió en su salvación. Sin necesidad de salir de casa, Franco utilizó nuestra app para encontrar y alquilar dos percheros profesionales por tan solo $14.000 pesos por día. Una inversión mínima considerando que la compra de percheros nuevos le habría costado más de $120.000 pesos, generando un ahorro superior al 88%.
+                      <strong>La solución:</strong> Rentify se convirtió en su salvación. Sin necesidad de salir de casa, Franco utilizó nuestra app para encontrar y alquilar dos percheros profesionales por tan solo $14.000 pesos por día. Una inversión mínima considerando que la compra de percheros nuevos le habría costado más de $120.000 pesos, generando un ahorro superior a los $100.000 pesos.
                     </p>
                     
                     <p className="text-lg leading-relaxed">
-                      <strong>El resultado:</strong> California Garage vivió una noche inolvidable. El evento fue un rotundo éxito con una asistencia masiva, la ropa exhibida impecablemente y las ventas superaron todas las expectativas. Franco logró crear la experiencia perfecta que había imaginado.
+                      <strong>El resultado:</strong> California Garage vivió una tarde inolvidable. El evento fue un rotundo éxito con una asistencia masiva, la ropa exhibida impecablemente y las ventas superaron todas las expectativas. Franco logró crear la experiencia perfecta que había imaginado.
                     </p>
                   </div>
 
