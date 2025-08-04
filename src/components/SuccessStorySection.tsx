@@ -29,19 +29,19 @@ const SuccessStorySection = () => {
                    </div>
                  </div>
                  
-                 <div className="space-y-4 text-gray-700">
-                   <p className="text-lg leading-relaxed">
-                     <strong>El problema:</strong> Franco organizaba un evento especial en su local de ropa con DJ en vivo y cafetería para el sábado. A solo 3 días del evento, se dio cuenta de que no tenía percheros suficientes para colgar toda la ropa que iba a poner a la venta.
-                   </p>
-                   
-                   <p className="text-lg leading-relaxed">
-                     <strong>La solución:</strong> Gracias a Rentify, desde la comodidad de su casa y usando solo la app, logró alquilar los dos percheros que le hacían falta por solo $14.000 pesos el día por ambos. Considerando que cada perchero nuevo cuesta alrededor de $60.000, se ahorró más de $100.000.
-                   </p>
-                   
-                   <p className="text-lg leading-relaxed">
-                     <strong>El resultado:</strong> Logró tener un evento exitoso con muchísima gente, la ropa perfectamente ordenada y las ventas fueron un completo éxito.
-                   </p>
-                 </div>
+                  <div className="space-y-4 text-gray-700">
+                    <p className="text-lg leading-relaxed">
+                      <strong>El problema:</strong> Franco, propietario de California Garage, tenía planeado un evento especial para el sábado: una experiencia única combinando moda, música en vivo con DJ y una cafetería exclusiva dentro de su local. Con solo tres días de anticipación, se enfrentó a un problema crítico: no contaba con suficientes percheros para exhibir toda la colección que había preparado para la venta.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      <strong>La solución:</strong> Rentify se convirtió en su salvación. Sin necesidad de salir de casa, Franco utilizó nuestra app para encontrar y alquilar dos percheros profesionales por tan solo $14.000 pesos por día. Una inversión mínima considerando que la compra de percheros nuevos le habría costado más de $120.000 pesos, generando un ahorro superior al 88%.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      <strong>El resultado:</strong> California Garage vivió una noche inolvidable. El evento fue un rotundo éxito con una asistencia masiva, la ropa exhibida impecablemente y las ventas superaron todas las expectativas. Franco logró crear la experiencia perfecta que había imaginado.
+                    </p>
+                  </div>
 
                  <div className="flex items-center mt-6 p-4 bg-rentify-yellow/20 rounded-lg">
                    <Heart className="h-6 w-6 text-rentify-green mr-3" />
