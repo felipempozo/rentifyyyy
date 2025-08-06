@@ -35,7 +35,7 @@ const SuccessStorySection = () => {
                     </p>
                     
                     <p className="text-lg leading-relaxed">
-                      <strong>La solución:</strong> Rentify se convirtió en su salvación. Sin necesidad de salir de casa, Franco utilizó nuestra app para encontrar y alquilar dos percheros profesionales por tan solo $14.000 pesos por día. Una inversión mínima considerando que la compra de percheros nuevos le habría costado más de $120.000 pesos, generando un ahorro superior a los $100.000 pesos.
+                      <strong>La solución:</strong> Rentify se convirtió en su salvación. Franco se contactó con nuestro equipo y sin necesidad de salir de casa, logró alquilar dos percheros profesionales por tan solo $14.000 pesos por día. Una inversión mínima considerando que la compra de percheros nuevos le habría costado más de $120.000 pesos, generando un ahorro superior a los $100.000 pesos.
                     </p>
                     
                     <p className="text-lg leading-relaxed">
@@ -46,7 +46,7 @@ const SuccessStorySection = () => {
                  <div className="flex items-center mt-6 p-4 bg-rentify-yellow/20 rounded-lg">
                    <Heart className="h-6 w-6 text-rentify-green mr-3" />
                    <p className="text-rentify-dark font-medium italic">
-                     "Rentify me salvó el evento. En minutos conseguí los percheros que necesitaba y me ahorré una fortuna. ¡Increíble servicio!"
+                     "Rentify me salvó el evento. En minutos conseguí los percheros que necesitaba y me ahorré mucho dinero. ¡Increíble servicio!"
                    </p>
                  </div>
 
